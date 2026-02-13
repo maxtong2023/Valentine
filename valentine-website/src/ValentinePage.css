@@ -4,23 +4,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #fff5f7;
   padding: 2rem;
 }
 
 .valentine-title {
   font-size: 3rem;
-  color: #fff;
+  color: #d4a5a5;
   margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  font-weight: 700;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
 }
 
 .valentine-subtitle {
   font-size: 1.5rem;
-  color: #f0f0f0;
-  margin-bottom: 3rem;
+  color: #e6b8b8;
+  margin-bottom: 2rem;
   font-style: italic;
+  font-weight: 300;
+}
+
+.message-container {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.no-message {
+  font-size: 1.3rem;
+  color: #d4a5a5;
+  font-style: italic;
+  text-align: center;
+  animation: fadeInShake 0.5s ease-in;
+}
+
+@keyframes fadeInShake {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .buttons-container {
@@ -31,32 +63,76 @@
 
 .yes-button,
 .no-button {
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
+  border: 2px solid #f5d4d4;
+  border-radius: 30px;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: #d4a5a5;
 }
 
 .yes-button {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background-color: #f5d4d4;
   color: white;
+  border: none;
 }
 
 .yes-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(245, 87, 108, 0.4);
+  background-color: #efc4c4;
+  box-shadow: 0 4px 12px rgba(245, 212, 212, 0.3);
+}
+
+.yes-button.shake {
+  animation: shake 0.5s infinite;
+}
+
+.yes-button.shake-intense {
+  animation: shakeIntense 0.3s infinite;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px) rotate(-2deg);
+  }
+  75% {
+    transform: translateX(5px) rotate(2deg);
+  }
+}
+
+@keyframes shakeIntense {
+  0%, 100% {
+    transform: translateX(0) rotate(0);
+  }
+  10% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
+  70% {
+    transform: translateX(10px) rotate(5deg);
+  }
+  90% {
+    transform: translateX(-10px) rotate(-5deg);
+  }
 }
 
 .no-button {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
+  background-color: white;
 }
 
 .no-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(79, 172, 254, 0.4);
+  background-color: #fef3f5;
+  box-shadow: 0 4px 12px rgba(212, 165, 165, 0.2);
 }
 
 @media (max-width: 768px) {

@@ -4,33 +4,32 @@ function LetterPage() {
   return (
     <div className="letter-container">
       <div className="letter-content">
-        <h1 className="letter-title">My Dearest Valentine ❤️</h1>
+        <h1 className="letter-title">Dear Mandy,</h1>
 
         <div className="letter-body">
           <p>
-            From the moment I met you, my world became brighter and more beautiful.
-            Every day with you feels like a gift, and I cherish every moment we share together.
+            Happy Valentine's Day! 
           </p>
 
           <p>
-            You make me laugh when I'm down, you inspire me to be better, and you love me
-            unconditionally. Your smile lights up my darkest days, and your love gives me
-            strength I never knew I had.
+            It's hard to believe that this is already the third valentine's day we've spent together. Time flies 
+            when you are with your favorite person. You've made every moment of my life special, and I'm so grateful
+            and lucky to have you in my life.
           </p>
 
           <p>
-            I want to spend every Valentine's Day, every holiday, every ordinary Tuesday,
-            and every extraordinary moment with you. You are my best friend, my partner,
-            and the love of my life.
+            I want to spend every valentine's day, every birthday, every holiday together with you for the rest of my life. 
+            I'm proud of everything that you do, you're smart, pretty, funnier than me, and all around the best girlfriend I could have 
+            ever asked for. Thank you for everything, I love you so much.
           </p>
 
           <p>
-            Thank you for saying yes. Thank you for being you. Thank you for choosing me.
+            
           </p>
 
           <p className="letter-signature">
-            Forever yours,<br />
-            Your Valentine
+            Your boyfriend,<br />
+            Max
           </p>
         </div>
       </div>
