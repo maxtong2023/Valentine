@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './CatFlowersPage.css';
+import catImage from './assets/cat.png';
 
 function CatFlowersPage() {
   const navigate = useNavigate();
@@ -52,7 +53,7 @@ function CatFlowersPage() {
 
         <div className="cat-image-wrapper">
           <img
-            src="/images/cat.png"
+            src={catImage}
             alt="Cat with flowers"
             className="cat-image"
           />
