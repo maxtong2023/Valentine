@@ -15,6 +15,8 @@
   font-weight: 300;
   letter-spacing: 2px;
   font-family: 'Georgia', serif;
+  text-align: center;
+  width: 100%;
 }
 
 .valentine-subtitle {
@@ -23,6 +25,8 @@
   margin-bottom: 2rem;
   font-style: italic;
   font-weight: 300;
+  text-align: center;
+  width: 100%;
 }
 
 .message-container {
@@ -138,10 +142,13 @@
 @media (max-width: 768px) {
   .valentine-title {
     font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1rem;
   }
 
   .valentine-subtitle {
     font-size: 1.2rem;
+    padding: 0 1rem;
   }
 
   .buttons-container {
