@@ -1,0 +1,68 @@
+.letter-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 2rem;
+}
+
+.letter-content {
+  max-width: 700px;
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.letter-title {
+  font-size: 2.5rem;
+  color: #f5576c;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.letter-body {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.letter-body p {
+  margin-bottom: 1.5rem;
+}
+
+.letter-signature {
+  margin-top: 3rem;
+  font-style: italic;
+  text-align: right;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .letter-content {
+    padding: 2rem;
+  }
+
+  .letter-title {
+    font-size: 2rem;
+  }
+
+  .letter-body {
+    font-size: 1rem;
+  }
+}
